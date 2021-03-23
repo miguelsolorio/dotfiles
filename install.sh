@@ -11,7 +11,7 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-homedir=$1
+homedir=$HOME
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles

@@ -1,5 +1,5 @@
 export _Z_OWNER="misolori"
-export ZSH="~/.oh-my-zsh"
+export ZSH=$HOME/oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 plugins=(git git-auto-fetch zsh-autosuggestions pip pipenv npm nvm)

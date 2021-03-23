@@ -1,13 +1,13 @@
-# Path to your oh-my-zsh configuration.
+## ZSH
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 plugins=(git git-auto-fetch zsh-syntax-highlighting zsh-autosuggestions pip pipenv npm nvm)
 
 source $ZSH/oh-my-zsh.sh
-source ~/dotfiles/.bash_profile
+source $HOME/.bash_profile
 
-# Aliases
+## Aliases
 
 # Desktop
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder"

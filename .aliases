@@ -1,0 +1,35 @@
+# Update Homebrew itself, upgrade all packages, remove dead symlinks, remove old versions of installed formulas, clean old downloads from cache, remove versions of formulas, which are downloaded, but not installed, check system for potential problems, remove cached Homebrew-Cask downloads
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor; brew cask cleanup'
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+alias showDesktop='defaults write com.apple.finder CreateDesktop true; killall Finder'
+alias hideDesktop='defaults write com.apple.finder CreateDesktop false; killall Finder'
+
+alias idweb='kdestroy --all; kinit --keychain misolori@REDMOND.CORP.MICROSOFT.COM; open https://idweb -a Safari.app'
+
+alias vsc='cd ~/Projects/vscode/'
+alias vscd='cd ~/Projects/vscode-distro/'
+alias audio-reset="sudo killall coreaudiod"
+alias ..="cd .."
+alias ....="cd ../.."
+# alias code-clean="rm -fr ~/Library/Preferences/com.microsoft.VSCode.helper.plist && rm -fr ~/Library/Preferences/com.microsoft.VSCode.plist && rm -fr ~/Library/Caches/com.microsoft.VSCode && rm -fr ~/Library/Caches/com.microsoft.VSCode.ShipIt/ && rm -fr ~/Library/Application\ Support/Code/ && rm -fr ~/Library/Saved\ Application\ State/com.microsoft.VSCode.savedState/ && rm -fr ~/.vscode/"
+# alias code-build="vsc && yarn install && yarn watch"
+alias git-clean="git clean -fdx && yarn && yarn watch"
+# alias zopflipng="~/apps/zopflipng"
+alias clear-font-cache='sudo atsutil databases -remove && atsutil server -shutdown && atsutil server -ping'
+# alias sophos="sudo sh ~/Scripts/remove-sophos.sh"
+alias term=terminalTest
+alias code-empty="rm -fr ~/code_profiles/empty/ && mkdir -p ~/code_profiles/empty/data/User && c --user-data-dir ~/code_profiles/empty/data/User --extensions-dir ~/code_profiles/empty/extensions"
+alias gp="ggl"
+# alias bs="sudo iconsur set /Applications/Visual\ Studio\ Code\ -\ Insiders.app -l -s 0.8 && sudo iconsur cache"
+alias nb="cd ~/Projects/notebooks/notebook-playground"
+alias notebook="nb"
+alias nb-launch="vsc && ./scripts/code.sh ~/Projects/vscode-notebook-testdata --extensions-dir ~/Projects/notebook-extension-samples"
+alias nb-build="cd ~/Projects/notebook-extension-samples && git pull && yarn && yarn run install && yarn run build && nb-launch"
+# alias audio-rest="sudo kill -9 `ps ax|grep ‘coreaudio[a-z]’ |awk ‘{print $1}’`"
+# alias server=server()
+# alias python='/usr/local/bin/python3'
+# alias python='/usr/local/bin/python2.7'
+# alias snitchOff="sudo launchctl unload /Library/LaunchDaemons/at.obdev.littlesnitchd.plist"
+# alias snitchOn="sudo launchctl load /Library/LaunchDaemons/at.obdev.littlesnitchd.plist"

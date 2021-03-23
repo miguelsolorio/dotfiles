@@ -14,7 +14,7 @@ fi
 homedir=$1
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=${homedir}/.dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="bash_profile aliases shortcuts"

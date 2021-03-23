@@ -9,7 +9,7 @@ function server() {
 alias server=server()
 
 # terminal test
-function terminalTest(){
+function term() {
   #!/bin/bash
   T='●●●'
   echo -e "\n                 40m     41m     42m     43m\
@@ -26,4 +26,3 @@ function terminalTest(){
   done
   echo
 }
-alias term=terminalTest

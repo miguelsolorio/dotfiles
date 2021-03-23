@@ -26,3 +26,5 @@ alias nb="cd ~/Projects/notebooks/notebook-playground"
 alias notebook="nb"
 alias nb-launch="vsc && ./scripts/code.sh ~/Projects/vscode-notebook-testdata --extensions-dir ~/Projects/notebook-extension-samples"
 alias nb-build="cd ~/Projects/notebook-extension-samples && git pull && yarn && yarn run install && yarn run build && nb-launch"
+
+echo "dotfiles are working"

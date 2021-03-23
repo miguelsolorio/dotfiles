@@ -6,11 +6,6 @@
 # And sets Sublime preferences
 ############################
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-    exit 1
-fi
-
 homedir=$HOME
 
 # dotfiles directory

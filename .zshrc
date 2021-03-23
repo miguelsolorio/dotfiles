@@ -1,6 +1,6 @@
 export _Z_OWNER="misolori"
 export ZSH=$HOME/.oh-my-zsh
-source $ZSH/plugins/z/z.plugin.zsh
+# source $ZSH/plugins/z/z.plugin.zsh
 
 ZSH_THEME="robbyrussell"
 

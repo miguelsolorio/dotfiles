@@ -12,7 +12,7 @@ homedir=$HOME
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile aliases shortcuts zshrc"
+files="bash_profile zshrc"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -27,4 +27,4 @@ done
 
 # Download zsh-autosuggetsions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/rupa/z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

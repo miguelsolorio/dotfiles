@@ -17,7 +17,7 @@ homedir=$1
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile aliases shortcuts"
+files="bash_profile aliases shortcuts zshrc"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -29,6 +29,3 @@ for file in ${files}; do
     echo "Creating symlink to $file in home directory."
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
-
-# link to zshrc
-ln -s ${dotfiledir}/.zshrc ~/.zshrc

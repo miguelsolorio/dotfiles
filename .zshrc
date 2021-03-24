@@ -2,12 +2,15 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-plugins=(git git-auto-fetch zsh-syntax-highlighting zsh-autosuggestions pip pipenv npm nvm)
-
-source $ZSH/oh-my-zsh.sh
-source $HOME/.bash_profile
+# plugins
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.sh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
+
+plugins=(git git-auto-fetch zsh-syntax-highlighting zsh-autosuggestions pip pipenv npm nvm)
+
+# source
+source $ZSH/oh-my-zsh.sh
+source $HOME/.bash_profile
 
 ## Aliases
 

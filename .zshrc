@@ -6,6 +6,8 @@ plugins=(git git-auto-fetch zsh-syntax-highlighting zsh-autosuggestions pip pipe
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_profile
+source $HOME/.zsh/zsh-autosuggestions
+source $HOME/.zsh/zsh-syntax-highlighting
 
 ## Aliases
 

@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 
-############################
-# This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-# And also installs Homebrew Packages
-# And sets Sublime preferences
-############################
-
-homedir=$HOME
-
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=$HOME/dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="bash_profile zshrc"
@@ -25,6 +17,6 @@ for file in ${files}; do
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
 
-# Download zsh-autosuggetsions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# Download zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.zsh/zsh-syntax-highlighting

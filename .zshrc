@@ -2,11 +2,9 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-# plugins
-source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.sh
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
-
-plugins=(git git-auto-fetch zsh-syntax-highlighting zsh-autosuggestions pip pipenv npm nvm)
+plugins=(git git-auto-fetch pip pipenv npm nvm)
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # source
 source $ZSH/oh-my-zsh.sh
